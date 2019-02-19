@@ -1,23 +1,23 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 type User struct {
-  Id   int
-  Name string
+	Id   int
+	Name string
 }
 
 func NewUser(id int, name string) *User {
-  u := new(User)
-  u.Id = id
-  u.Name = name
+	u := new(User)
+	u.Id = id
+	u.Name = name
 
-  return u
+	return u
 }
 
 func main() {
-  newuser := NewUser(1, "taro")
-  fmt.Println(newuser)
+	newuser := NewUser(1, "taro")
+	fmt.Println(newuser)
 }
